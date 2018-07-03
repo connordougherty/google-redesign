@@ -1,0 +1,118 @@
+html, body {
+    height: 100%
+}
+
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#80FFFF), to(#FFB2FF));
+    background: linear-gradient(#80FFFF, #FFB2FF);
+}
+
+::-moz-selection {
+    background: rgba(183, 77, 248, 0.3);
+}
+
+::selection {
+    background: rgba(183, 77, 248, 0.3);
+}
+
+.content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 18vw;
+    font-weight: 100;
+    color: #282c33;
+    letter-spacing: .25em;
+    text-indent: .25em;
+    text-shadow: -2.5px -0px 0px rgba(249, 126, 115, .75), 2.5px 0px 0px rgba(133, 255, 254, .75);
+    margin-bottom: .34em;
+}
+
+.chinese {
+    font-size: 5vw;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 9vw;
+        color: #282c33;
+        text-shadow: -5px -0px 0px rgba(249, 126, 115, .75), 5px 0px 0px rgba(133, 255, 254, .75);
+    }
+    .chinese {
+        font-size: 3vw;
+    }
+}
+
+.search-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+
+@media screen and (min-width: 800px) {
+    .search-form {
+        width: 50%;
+    }
+}
+
+.search-bar {
+    width: 100%;
+    font-family: 'VT323', monospace;
+    color: #404040;
+    caret-color: #F443C3;
+    font-size: 1.5em;
+    padding: .25em .5em .25em .5em;
+    border: .2em ridge;
+    margin-bottom: 1em;
+}
+
+.search-bar[type=text] {
+    -webkit-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.search-bar[type=text]:focus {
+    -webkit-box-shadow: 0 0 7px #f443c3;
+    box-shadow: 0 0 7px #f443c3;
+}
+
+.search-button {
+    font-family: 'VT323', monospace;
+    font-size: 1.34em;
+    color: #606060;
+    border: .15em outset;
+    padding: .25em .5em .25em .5em;
+    margin: .125em;
+}
+
+.search-button:active {
+    border: .15em inset;
+}
+
+.search-button:focus {
+    outline: none;
+}
